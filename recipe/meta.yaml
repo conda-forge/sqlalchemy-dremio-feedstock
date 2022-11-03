@@ -1,5 +1,5 @@
 {% set name = "sqlalchemy-dremio" %}
-{% set version = "1.2.1" %}
+{% set version = "3.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sqlalchemy_dremio-{{ version }}.tar.gz
-  sha256: c5d495de7574cd9ea40a6f5433e49c4df3ada2d8f1ef2c60453edb23928623d0
+  sha256: 58e4bd6f0d562f07460debaf49fd4972d101fffad4214cf6f17e805f132d2526
 
 build:
   noarch: python
