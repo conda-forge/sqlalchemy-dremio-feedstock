@@ -7,7 +7,7 @@ Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sqlalchemy-dremio-feedstock/blob/main/LICENSE.txt)
 
-Summary: A SQLAlchemy dialect for Dremio via the ODBC and Flight interface.
+Summary: A SQLAlchemy dialect for Dremio via the Flight interface.
 
 Current build status
 ====================
@@ -144,4 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@cshaley](https://github.com/cshaley/)
+* [@rxm7706](https://github.com/rxm7706/)
 
