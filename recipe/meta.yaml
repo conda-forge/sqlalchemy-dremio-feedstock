@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sqlalchemy_dremio-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sqlalchemy_dremio-{{ version }}.tar.gz
   sha256: f9c2dfc0550fde59d74bf170fe9577d7dff68f8fff7eaec631b848e3bccd2c1a
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python  >=3.7,<3.11
+    - python {{ python_min }}
     - pip
   run:
-    - python  >=3.7,<3.11
+    - python >={{ python_min }},<3.11
     - sqlalchemy >=1.3.24
     - pyarrow >=5.0.0
 
@@ -30,6 +30,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/narendrans/sqlalchemy_dremio
